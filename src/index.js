@@ -2,16 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
-import Timer from './components/Timer';
-import TodoApp from './components/Todo';
-import {Router, Route, browserHistory} from 'react-router';
+import { Router, browserHistory, Route } from 'react-router'
+import { Book1 } from './components/books.jsx'
 
 
 ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={App} />
-    <Router path="/Timer" component={Timer}></Router>
-    <Router path="/Todo" component={TodoApp}></Router>
-  </Router> ,
+    <Route path={'/book/:id'} component={Book1} />
+  </Router>,
   document.getElementById('root')
 );
