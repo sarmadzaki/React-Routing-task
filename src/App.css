@@ -4,6 +4,13 @@
 .todo {
   text-align: center;
 }
+.col-sm-6 {
+text-align: center !important;
+margin-left: 25%;
+}
+body {
+  text-align: center  !important;
+}
 .Timer {
   text-align: center;
 }
